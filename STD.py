@@ -7,7 +7,7 @@ with open('input.json') as f:
   userDict = json.load(f)
 
 # creates list of just values
-userList = list(userDict.values())
+userList = list(userDict["elements"])
 
 #calulates STD of list of just values
 stdValue = np.std(userList);
